@@ -1,7 +1,20 @@
 aid: magnusmetal
 name: MagnusMetal
-description: 'MagnusMetal is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Magnus Metal (MagnusMetal Ltd.) is an Israeli advanced-manufacturing company
+  bringing metal casting into the Industry 4.0 era with its patent-pending
+  Digital Casting System. Founded in 2017 and headquartered at the Revadim
+  Industrial Park in Kibbutz Revadim, Israel, the company builds machines that
+  combine additive-manufacturing and casting principles: a slicer designs a
+  ceramic mold layer by layer and solid alloy is deposited into each layer, so
+  parts are produced from widely available solid metals rather than powders and
+  with no hard tooling. The company markets the process for powertrains,
+  engines, industrial machinery and structural components, claiming removal of
+  6-18 weeks of tooling lead time, up to 70% raw-material savings and roughly
+  50% lower energy use. Magnus Metal is a hardware and materials manufacturer -
+  it sells castings and casting systems, not software - and publishes no public
+  developer program, API, SDK or machine-readable contract of any kind.
+image: https://magnusmetal.com/wp-content/uploads/2023/01/Magnus-Elements_02_layers_04_00000.jpg
 url: https://raw.githubusercontent.com/api-evangelist/magnusmetal/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +25,15 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Manufacturing
+- Advanced Manufacturing
+- Metal Casting
+- Additive Manufacturing
+- Industrial
+- Materials
+- Hardware
+- Industry 4.0
+- Israel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/magnusmetal-domain-security.yml
+- type: LLMsTxt
+  url: llms/magnusmetal-llms.txt
 - type: Website
-  url: https://forgeglobal.com/magnusmetal_stock/
+  url: https://magnusmetal.com/
+- type: About
+  url: https://magnusmetal.com/about/
+- type: Support
+  url: https://magnusmetal.com/contact-us/
+- type: TermsOfService
+  url: https://magnusmetal.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://magnusmetal.com/privacy-policy/
+- type: Careers
+  url: https://magnusmetal.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/magnusmetal/
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Magnus Metal manufactures metal castings and Digital Casting machines; its entire public
+    web presence is six WordPress pages plus job listings, with no developer, docs or API
+    section anywhere in its sitemap, and api./docs./developer.magnusmetal.com do not resolve
+    in DNS.
+  evidence:
+  - url: https://magnusmetal.com/
+    status: 200
+  - url: https://magnusmetal.com/page-sitemap.xml
+    status: 200
+  - url: https://magnusmetal.com/openapi.json
+    status: 404
+  - url: https://magnusmetal.com/.well-known/agent-card.json
+    status: 404
+  - url: https://magnusmetal.com/docs
+    status: 404
+  checked: '2026-08-25'

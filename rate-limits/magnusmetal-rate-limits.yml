@@ -1,0 +1,17 @@
+generated: '2026-08-25'
+method: searched
+source: https://magnusmetal.com/
+limit_count: 0
+note: >-
+  No rate limits are documented because Magnus Metal publishes no API. There is no
+  developer portal, no API reference and no machine-readable contract on magnusmetal.com
+  or on any api./docs./developer. subdomain (all of which fail to resolve in DNS), so
+  there is no runtime surface for which limits could exist. Recorded as a measured zero.
+rate_limits: []
+headers: []
+evidence:
+- url: https://magnusmetal.com/openapi.json
+  status: 404
+- url: https://api.magnusmetal.com/
+  status: 0
+  note: DNS does not resolve

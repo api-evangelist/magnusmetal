@@ -1,0 +1,47 @@
+generated: '2026-08-25'
+method: probed
+source: live GET of /.well-known/* on the magnusmetal.com origin
+note: >-
+  Every /.well-known/ path probed on magnusmetal.com returned a real HTTP 404 from the
+  WordPress origin, including a control path that cannot exist — so this host is NOT a
+  soft-404 catch-all and the absences below are genuine. No document was fetched or
+  saved, therefore NO WellKnown, APICatalog or SecurityTxt pointer is emitted for this
+  provider: this file records an absence, not a presence.
+hit_count: 0
+soft_404_control:
+  path: /.well-known/ae-soft404-control-9f3
+  status: 404
+  bytes: 75017
+hosts:
+- host: https://magnusmetal.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/mcp.json
+    status: 404
+    file: null
+  - path: /.well-known/dnt-policy.txt
+    status: 404
+    file: null

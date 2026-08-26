@@ -1,0 +1,19 @@
+generated: '2026-08-25'
+method: searched
+source: https://magnusmetal.com/
+plan_count: 0
+note: >-
+  Magnus Metal publishes no pricing, plans or quota page of any kind. The whole public
+  site is four pages plus a careers section (home, about, contact-us, terms-of-use,
+  privacy-policy, careers/*, per the Yoast page sitemap) and there is no commerce,
+  sign-up, quote or "request pricing" surface. The company sells castings and casting
+  systems through direct sales; commercial terms are not published. This is an honest
+  zero, not an unchecked field, and no Pricing pointer is emitted.
+plans: []
+evidence:
+- url: https://magnusmetal.com/
+  status: 200
+- url: https://magnusmetal.com/page-sitemap.xml
+  status: 200
+- url: https://magnusmetal.com/docs
+  status: 404
