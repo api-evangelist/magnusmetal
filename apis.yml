@@ -14,6 +14,17 @@ description: >-
   50% lower energy use. Magnus Metal is a hardware and materials manufacturer -
   it sells castings and casting systems, not software - and publishes no public
   developer program, API, SDK or machine-readable contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://magnusmetal.com/wp-content/uploads/2023/01/Magnus-Elements_02_layers_04_00000.jpg
 url: https://raw.githubusercontent.com/api-evangelist/magnusmetal/refs/heads/main/apis.yml
 x-type: company
